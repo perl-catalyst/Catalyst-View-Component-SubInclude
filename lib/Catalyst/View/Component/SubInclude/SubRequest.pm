@@ -47,7 +47,7 @@ Then, somewhere in your templates:
 =head1 DESCRIPTION
 
 C<Catalyst::View::Component::SubInclude::SubRequest> uses Catalyst sub-requests
-to render the subinclude contents. 
+to render the subinclude contents.
 
 It requires L<Catalyst::Plugin::SubRequest>.
 
@@ -102,7 +102,7 @@ sub generate_subinclude {
         unless $c->can('sub_request');
 
     my $query = ref $params[-1] eq 'HASH' ? pop @params : {};
-    
+
     my $action = blessed($path)
           ? $path
           : $c->dispatcher->get_action_by_path($path);
@@ -114,7 +114,7 @@ sub generate_subinclude {
 
 =head1 SEE ALSO
 
-L<Catalyst::View::Component::SubInclude|Catalyst::View::Component::SubInclude>, 
+L<Catalyst::View::Component::SubInclude|Catalyst::View::Component::SubInclude>,
 L<Catalyst::Plugin::SubRequest|Catalyst::Plugin::SubRequest>
 
 =head1 AUTHOR
