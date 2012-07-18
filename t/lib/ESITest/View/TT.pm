@@ -1,10 +1,12 @@
 package ESITest::View::TT;
 use Moose;
+use namespace::autoclean;
 
 extends 'Catalyst::View::TT';
 with 'Catalyst::View::Component::SubInclude';
 
 __PACKAGE__->config(
+    render_die => 1,
     TEMPLATE_EXTENSION => '.tt',
     subinclude_plugin => 'Visit',
     subinclude => {
@@ -19,4 +21,6 @@ __PACKAGE__->config(
     },
 );
 
+__PACKAGE__->meta->make_immutable;
 1;
+
