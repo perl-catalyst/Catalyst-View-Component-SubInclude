@@ -72,10 +72,12 @@ calls this function using the default plugin as the first parameter.
 
 =head1 SUBINCLUDE PLUGINS
 
-The module comes with two subinclude plugins:
-L<SubRequest|Catalyst::Plugin::View::Component::SubRequest>,
-L<Visit|Catalyst::Plugin::View::Component::Visit> and
-L<ESI|Catalyst::Plugin::View::Component::ESI>.
+The module comes with several subinclude plugins:
+L<SubRequest|Catalyst::View::Component::SubInclude::SubRequest>,
+L<HTTP|Catalyst::View::Component::SubInclude::HTTP>,
+L<SSI|Catalyst::View::Component::SubInclude::SSI>,
+L<Visit|Catalyst::View::Component::SubInclude::Visit> and
+L<ESI|Catalyst::View::Component::SubInclude::ESI>.
 
 By default, the C<SubRequest> plugin will be used. This can be changed in the
 view's configuration options (either in the config file or in the view module
