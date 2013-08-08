@@ -82,7 +82,7 @@ in your view:
         }
     );
 
-Note: the stash that the subrequest recieves is a shallow copy of the original stash. That
+Note: the stash that the subrequest receives is a shallow copy of the original stash. That
 means that changes to values of keys on the first level of the stash will be lost when the
 subrequest call returns. Don't count on this behaviour, as it may change in the future.
 
